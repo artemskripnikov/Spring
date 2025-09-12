@@ -16,6 +16,10 @@ public class StorageService {
     private final Map<UUID, Product> products = new HashMap<>();
     private final Map<UUID, Article> articles = new HashMap<>();
 
+    public Optional<Product> getProductById(UUID id) {
+        return Optional.ofNullable(products.get(id));
+    }
+
     public StorageService() {
         initializeTestData();
     }
