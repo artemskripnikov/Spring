@@ -60,4 +60,8 @@ public final class Article implements Searchable {
         return title.toLowerCase().hashCode();
     }
 
+    public String getTitle() {
+        return title;
+    }
+
 }
